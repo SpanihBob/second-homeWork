@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 1 -->
+     <script>
+        let nachalo = +prompt("введите первое число");
+        let konec = +prompt("введите второе число");
+        let summa = 0;
+            for (i=nachalo; i<=konec; i++){summa += i;}
+            alert(summa);
+    </script>
+
+
+<!-- 2  -->
+
+
+     <!-- <script>
+        /*Алгоритм Евклида – это алгоритм нахождения наибольшего общего делителя (НОД) пары целых чисел.
+        1. Большее число делим на меньшее.
+        2. Если делится без остатка, то меньшее число и есть НОД (следует выйти из цикла).
+        3. Если есть остаток, то большее число заменяем на остаток от деления.
+        4. Переходим к пункту 1.*/
+        let del1 = +prompt("введите первое число");
+        let del2 = +prompt("введите второе число");
+        while (del1!=0 && del2!=0){
+                                    if(del1>del2)(del1=del1%del2)
+                                    else(del2=del1%del2)}
+        alert(del1 + del2)                                                                              
+    </script> -->
+
+
+<!-- 3 -->
+
+
+     <!-- <script>
+        let delimoe = +prompt("введите целое число");
+        for (let i=1; i<=delimoe; i++)
+                        {  if (delimoe%i==0)console.log(i);  }   
+    </script> -->
+
+
+<!-- 4 -->
+
+
+     <!-- <script>
+        let kollichestvo_cifr=prompt("введите число");
+        let i=1
+        let a=0
+        let do_skolki = Math.floor(kollichestvo_cifr/i)
+        for (; i<=do_skolki; i*=10){a=a+1;}
+        alert(a + " цифр во введенном числе")
+    </script> -->
+
+<!-- 5 -->
+
+     <!-- <script>
+        let bolse_nulya=0;
+        let mense_nulya=0;
+        let nul=0;
+        let chetn=0;
+        let nechetn=0;
+        for(i=0; i<10; i++)
+            {rnd = +prompt("введите число");        
+            if((rnd>0)&&(rnd%2==0)){(bolse_nulya=bolse_nulya+1); 
+                                  (chetn=chetn+1);}
+                else if((rnd>0)&&(rnd%2!=0)){(bolse_nulya=bolse_nulya+1); 
+                                             (nechetn=nechetn+1);}
+                    else if((rnd<0)&&(rnd%2==0)){(mense_nulya=mense_nulya+1); 
+                                                 (chetn=chetn+1);}
+                        else if((rnd<0)&&(rnd%2!=0)){(mense_nulya=mense_nulya+1); 
+                                                     (nechetn=nechetn+1);}
+                            else if(rnd==0){(nul=nul+1); 
+                                  (chetn=chetn+1);}
+            }
+            alert("больше нуля: " + bolse_nulya + "; меньше нуля: " + mense_nulya + "; нулей: " + nul + "; четных: " + chetn + "; нечетных:" + nechetn)
+
+    </script> -->
+
+
+<!-- 6 -->
+
+ <!-- <script>
+    let txt;
+    do{let chislo1 = +prompt("Введите первое число", "");
+         let chislo2 = +prompt("Введите второе число", "");
+         let deystvie = prompt("выберете действие +, -, *, /", "");
+         let otvet = "";
+            switch(deystvie){
+            case '+': otvet = chislo1 + chislo2;
+            alert(otvet);
+            break;
+            case '-' : otvet = chislo1 - chislo2;
+            alert(otvet);
+            break;
+            case '*' : otvet = chislo1 * chislo2;
+            alert(otvet);
+            break;
+            case '/' : otvet = chislo1 / chislo2;
+            alert(otvet);
+            break; 
+            default: alert("вы ввели неправильные значения");}
+            txt=prompt("нажмите Y хотите продолжить", "");}  
+        while((txt=="Y")||(txt=="y"));
+   </script> -->
+
+
+<!-- 7 -->
+
+
+ <!-- <script>
+    let chislo_nado_sdvinut = +prompt("введите число","");
+    let na_scolko_sdvinut = +prompt("на сколько чисел сдвинуть?","");
+    let poslednaya;
+    let math_floor_delenia;
+    for(j=1; j<=na_scolko_sdvinut; j++){   
+        let schetchik=-1
+        for(i=1; i <= chislo_nado_sdvinut; i*=10){schetchik=schetchik+1;}               //считаем сколькизначное число
+        poslednaya = chislo_nado_sdvinut%10;                                            //вычисляем последнюю цифру
+        math_floor_delenia = Math.floor(chislo_nado_sdvinut/10);                        //число без последней цифры
+        chislo_nado_sdvinut = poslednaya * Math.pow(10,schetchik) + math_floor_delenia;}//сдвинутое число, Math.pow(x,y)-означает вохведение числа x в степень y
+    
+    alert(chislo_nado_sdvinut);
+        
+    </script> -->
+
+
+<!-- 8 -->
+
+ <!-- <script>
+    let day_of_week;
+    let pon="понедельник"
+    let vtor="вторник"
+    let sre="среда"
+    let chet="четверг"
+    let pyat="пятница"
+    let subb="суббота"
+    let vosc="воскресенье"
+    let segodnya = vosc;
+    do {    alert(segodnya);        
+            if (segodnya==vosc) {segodnya = pon}
+                else if (segodnya==pon) {segodnya = vtor}
+                    else if (segodnya==vtor) {segodnya = sre}
+                        else if (segodnya==sre) {segodnya = chet}
+                            else if (segodnya==chet) {segodnya = pyat}
+                                else if (segodnya==pyat) {segodnya = subb}
+                                    else if (segodnya==subb) {segodnya = vosc}
+            day_of_week=prompt("нажмите Y хотите продолжить", "")}
+    while((day_of_week=="Y")||(day_of_week=="y"));
+</script> -->
+
+
+<!-- 9 -->
+
+<!-- <script>    
+    let tablitsa;
+    for(j=1; j<=10; j++){ 
+        for(i=1; i<=10; i++){tablitsa=j*i;
+                            document.write( i + "*" + j + "=" + tablitsa + "<br\/>")}
+        document.write("<hr\/>")                }
+                           
+     
+</script> -->
+
+
+<!-- 10 --> 
+
+<!-- <script>
+    alert("Загадайте число от 0 до 100");
+        let nachalnoe_chislo = 0;       //x
+        let konechnoe_chislo = 100;     //y
+        let vvedite_znak;               //>, <, =
+    do {       
+            vvedite_znak = prompt("ваше число >, <, или = " + (Math.floor(konechnoe_chislo - (konechnoe_chislo - nachalnoe_chislo)/2)));
+            if(vvedite_znak == '>'){nachalnoe_chislo = (nachalnoe_chislo + (konechnoe_chislo - nachalnoe_chislo)/2);}
+                else if(vvedite_znak == '<'){konechnoe_chislo = (konechnoe_chislo - (konechnoe_chislo - nachalnoe_chislo)/2);}
+                    else if (vvedite_znak == '='){alert("ваше число " + (Math.floor(konechnoe_chislo + nachalnoe_chislo)/2));}
+                        else alert("ввели чтото не то")
+        }
+    while(vvedite_znak != '=');
+
+</script> -->
+
+
+</body>
+</html>
